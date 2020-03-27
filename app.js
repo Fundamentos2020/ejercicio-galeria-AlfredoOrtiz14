@@ -6,9 +6,11 @@ let p = 1;
 
 function cargaImagenes(e){
     e.preventDefault();
-    
-    document.getElementById("im").remove();
-    p = document.getElementById("pag").value;
+    let algo = this.responseText;
+    console.log(algo);
+    while(document.getElementById("im"))
+        document.getElementById("im").remove();
+    //p = document.getElementById("pag").value;
     
     //console.log(JSON.parse(p));
 }
@@ -16,16 +18,12 @@ function cargaImagenes(e){
 function cargarImagen(e){
     e.preventDefault();
 
-    if(document.getElementById("im"))
+    while(document.getElementById("im"))//Borra las imagenes existentes
         document.getElementById("im").remove();
-    /*if(document.getElementById("pag"))
-    {
-        do{
-            document.getElementById("pag").remove();
-        }while (document.getElementById("Paginas").firstChild)
-    }*/
-        
-    //document.getElementById("Galeria").removeChild('div');
+
+    while(document.getElementById("pag"))//Borra los botones existentes
+        document.getElementById("pag").remove();
+
     const cantidad = document.getElementById('numero').value;
     console.log(cantidad);
     
