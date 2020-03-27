@@ -93,6 +93,11 @@ img{
     align-items: center;
 }
 
+#im{
+    display: inline-block;
+    max-height: fit-content;
+}
+
 li{
     display: inline-block;
     padding: 10px;
