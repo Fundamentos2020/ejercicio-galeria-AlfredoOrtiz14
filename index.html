@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <div class="col-m-12 col-s-12 text-center encab">
+            <h1>Galeria de Imágenes</h1>
+        </div>
+
+        <div class="col-m-12 col-s-12 text-center b-1 m-top-10 back-white c-im">
+            Escribe la cantidad de imágenes por página:
+            <div class="m-top-10 m-bot-10">
+                <form action="#" id="generar-imagen" class="back-white">
+                    <input type="number" id="numero" class="back-white inp-num" min="1" max="100" value="1">
+                    <input class="back-white inp-but" id="boton" type="submit" value="Generar Imágenes">
+                </form>
+            </div>
+        </div>
+
+        <div class="col-m-12 col-s-12 b-1 m-top-10 back-white text-center c-im">
+            Imágenes:
+        </div>
+
+        <div id="Galeria" class="col-m-12 col-s-12 back-white">
+        </div>
+
+        <div class= "col-m-12 col-s-12 b-1 back-white text-center"> 
+            <ul id="Paginas" class="back-white" >
+
+            </ul>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
